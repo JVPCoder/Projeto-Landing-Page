@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: 'Valorant';
+    src:  url('myfont.ttf') format('truetype');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color: #2e2828;
+    --background-grad: #503a3a;
+    --destaque: #f65151;
+    --blank: #fef4f4;    
+}
+
+body{
+    background-color: #0F1923;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: center;
+    background: var(--destaque);
+}
+
+
+.logo{
+    position: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 64px;
+    height: 64px;
+}
+
+h1{
+    display: inline;
+    font-family: 'Valorant', sans-serif;
+    background-color: var(--destaque);
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    color: var(--blank);
+}
+
+.navbar{
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: right;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar ul,li{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    padding: 10px 15px;
+    color: var(--blank);
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.navbar ul li:hover{
+    background-color: black;
+}
+
+.navbar ul,li,a{
+    color: var(--blank);
+    text-decoration: none;
+    list-style: none;
+    font-weight:bold;
+}
+
+#home{
+    width: 100%;
+    height: 965px;
+    background-color: brown;
+
+}
+
+#agents{
+    display: flex;
+    align-items: self-start;
+    width: 100%;
+    height: 965px;
+    background-color: black;
+    justify-content: center;
+}
+
+#agents .image{
+    height: 90%;
+    width: 500px;
+    padding: 3px;
+}
+
+#agents .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#agents .container{
+    display: flex;
+}
+
+#cards-wrapper{
+    width: 86vw;
+}
+
+#cards{
+    display: flex;
+    gap: 50px;
+
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.card{
+    flex: none;
+
+    background-image: linear-gradient(to right, #EE7D4C 40%, var(--blank));
+    border-radius: 20px;
+    width: 1600px;
+    height: 800px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    scroll-snap-align: start;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    gap: 30px;
+    align-items: center;
+}
+
+.card .title{
+    flex: content;
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Valorant';
+    text-shadow: 10px 1px 3px #d46e43e5;
+}
+
+.card2{
+    flex: none;
+
+    background-image: linear-gradient(to right, #76A9B1 40%, #fef4f4);
+    border-radius: 20px;
+    width: 1600px;
+    height: 800px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    scroll-snap-align: start;
+}
+
+.card2 .card-content{
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    gap: 30px;
+    align-items: center;
+}
+
+.card2 .title{
+    flex: content;
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Valorant';
+    text-shadow: 10px 1px 3px #68959c;
+}
+
+.card3{
+    flex: none;
+
+    background-image: linear-gradient(to right, #4C9735 40%, #fef4f4);
+    border-radius: 20px;
+    width: 1600px;
+    height: 800px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    scroll-snap-align: start;
+}
+
+.card3 .card-content{
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    gap: 30px;
+    align-items: center;
+}
+
+.card3 .title{
+    flex: content;
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Valorant';
+    text-shadow: 10px 1px 3px #41812e;
+}
+
+.card4{
+    flex: none;
+
+    background-image: linear-gradient(to right, #3879F9 40%, #fef4f4);
+    border-radius: 20px;
+    width: 1600px;
+    height: 800px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    scroll-snap-align: start;
+}
+
+.card4 .card-content{
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    gap: 30px;
+    align-items: center;
+}
+
+.card4 .title{
+    flex: content;
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Valorant';
+    text-shadow: 10px 1px 3px #2e64cf;
+}
+
+.card5{
+    flex: none;
+
+    background-image: linear-gradient(to right, #316BA0 40%, #fef4f4);
+    border-radius: 20px;
+    width: 1600px;
+    height: 800px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    scroll-snap-align: start;
+}
+
+.card5 .card-content{
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    gap: 30px;
+    align-items: center;
+}
+
+.card5 .title{
+    flex: content;
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Valorant';
+    text-shadow: 10px 1px 3px #2b5e8d;
+}
+
+
+#weapons{
+    width: 100%;
+    height: 965px;
+    background-color: lightgray;
+
+}
+
+#about{
+    width: 100%;
+    height: 965px;
+    background-color: lightcoral;
+
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+    background-color: #0F1923;
+    color: white;
+}
+
+h3{
+    margin: auto;
+    color: var(--blank);    
+}
+
+.darky{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6em;
+}
+
+.darky:hover{
+    color: var(--destaque);
+    transition: all .2s ease-in-out;
+}
